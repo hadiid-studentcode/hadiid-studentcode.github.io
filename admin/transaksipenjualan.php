@@ -418,6 +418,7 @@
                                     $total = 0;
                                     $cookie_data = stripslashes($_COOKIE['shopping_cart']);
                                     $cart_data = json_decode($cookie_data, true);
+                                    $i = 1;
                                     foreach ($cart_data as $keys => $values) {
                                 ?>
 
@@ -427,7 +428,7 @@
                                                  <div class="d-flex px-2 py-1">
 
                                                      <div class="d-flex flex-column justify-content-center">
-                                                         <h6 class="mb-0 text-sm">1</h6>
+                                                         <h6 class="mb-0 text-sm"><?= $i;?></h6>
 
                                                      </div>
                                                  </div>
@@ -469,6 +470,7 @@
                                          </tr>
                                      <?php
                                         $total = $total + ($values["item_quantity"] * $values["item_price"]);
+                                        $i++;
                                     }
                                         ?>
 
