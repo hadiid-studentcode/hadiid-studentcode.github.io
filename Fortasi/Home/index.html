@@ -13,21 +13,25 @@
     <link rel="icon" href="/dir/images/2.jpg" />
   </head>
   <body class="container">
-   
-
     <!-- card -->
     <div class="card text-center">
       <div class="card-header">Silahkan Absensi Fasilitator</div>
       <div class="card-body">
         <h5 class="card-title">Absen Kode QR batas 07.30 WIB</h5>
         <h5 class="card-title" id="date"></h5>
-        <br>
+        <br />
         <p class="card-text">
-        <img src="/dir/images/absensi-fasilitator-smkmuti.png" class="img-fluid" alt="...">
+          <img
+            src="/dir/images/absensi-fasilitator-smkmuti.png"
+            class="img-fluid"
+            alt="..."
+          />
         </p>
-        <a href="/Fortasi/Home/kelola.html" class="btn btn-primary">KELOLA FORTASI</a>
+        <a href="/Fortasi/Home/kelola.html" class="btn btn-primary"
+          >KELOLA FORTASI</a
+        >
       </div>
-      <div class="card-footer " id="date"></div>
+      <div class="card-footer" id="date"></div>
     </div>
     <!-- akhir card -->
 
@@ -38,12 +42,44 @@
     ></script>
 
     <script>
-        var d = new Date();
-        var day = d.getDate();
-        var month = d.getMonth() + 1;
-        var year = d.getFullYear();
-        document.getElementById("date").innerHTML =
-            day + "/" + month + "/" + year;
+      arrbulan = [
+        "Januari",
+        "Februari",
+        "Maret",
+        "April",
+        "Mei",
+        "Juni",
+        "Juli",
+        "Agustus",
+        "September",
+        "Oktober",
+        "November",
+        "Desember",
+      ];
+      date = new Date();
+      millisecond = date.getMilliseconds();
+      detik = date.getSeconds();
+      menit = date.getMinutes();
+      jam = date.getHours();
+      hari = date.getDay();
+      tanggal = date.getDate();
+      bulan = date.getMonth();
+      tahun = date.getFullYear();
+     document.getElementById("date").innerHTML =
+       tanggal +
+          "-" +
+          arrbulan[bulan] +
+          "-" +
+          tahun +
+          "<br/>" +
+          jam +
+          " : " +
+          menit +
+          " : " +
+          detik +
+          "." +
+          millisecond
+
     </script>
   </body>
 </html>
