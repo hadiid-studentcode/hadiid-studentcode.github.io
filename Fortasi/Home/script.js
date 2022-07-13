@@ -22,25 +22,65 @@ function acak() {
     "Nabil",
     "Nisya Fresetia",
   ];
-  var nilai1 = data[Math.floor(Math.random() * data.length)];
-  var nilai2 = data[Math.floor(Math.random() * data.length)];
-  var nilai3 = data[Math.floor(Math.random() * data.length)];
-  var nilai4 = data[Math.floor(Math.random() * data.length)];
-  var nilai5 = data[Math.floor(Math.random() * data.length)];
-  var nilai6 = data[Math.floor(Math.random() * data.length)];
-  var nilai7 = data[Math.floor(Math.random() * data.length)];
-  var nilai8 = data[Math.floor(Math.random() * data.length)];
-  var nilai9 = data[Math.floor(Math.random() * data.length)];
-  var nilai10 = data[Math.floor(Math.random() * data.length)];
 
-  fas1.innerHTML = nilai1;
+ var nilai1 = data[Math.floor(Math.random() * data.length)];
+ fas1.innerHTML = nilai1;
+ data.splice(data.indexOf(nilai1), 1);
+
+ var nilai2 = data[Math.floor(Math.random() * data.length)];
   fas2.innerHTML = nilai2;
+  data.splice(data.indexOf(nilai2), 1);
+
+
+  var nilai3 = data[Math.floor(Math.random() * data.length)];
   fas3.innerHTML = nilai3;
+  data.splice(data.indexOf(nilai3), 1);
+
+  var nilai4 = data[Math.floor(Math.random() * data.length)];
   fas4.innerHTML = nilai4;
+  data.splice(data.indexOf(nilai4), 1);
+
+  var nilai5 = data[Math.floor(Math.random() * data.length)];
   fas5.innerHTML = nilai5;
+  data.splice(data.indexOf(nilai5), 1);
+
+  var nilai6 = data[Math.floor(Math.random() * data.length)];
   fas6.innerHTML = nilai6;
+  data.splice(data.indexOf(nilai6), 1);
+
+  var nilai7 = data[Math.floor(Math.random() * data.length)];
   fas7.innerHTML = nilai7;
+  data.splice(data.indexOf(nilai7), 1);
+
+  var nilai8 = data[Math.floor(Math.random() * data.length)];
   fas8.innerHTML = nilai8;
+  data.splice(data.indexOf(nilai8), 1);
+
+  var nilai9 = data[Math.floor(Math.random() * data.length)];
   fas9.innerHTML = nilai9;
+  data.splice(data.indexOf(nilai9), 1);
+
+  var nilai10 = data[Math.floor(Math.random() * data.length)];
   fas10.innerHTML = nilai10;
+  data.splice(data.indexOf(nilai10), 1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
