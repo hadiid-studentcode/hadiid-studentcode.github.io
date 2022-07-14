@@ -140,7 +140,7 @@
           <h4 class="text-center">
             Jadwal <br />
             Fortasi SMK Muhammadiyah 3 Pekanbaru <br />
-            Kamis - jumat, 14 – 15 Juli 2022
+            Kamis 14 Juli 2022
           </h4>
           <table class="table table-warning" id="table_id">
             <thead>
@@ -176,6 +176,54 @@
               </tr>
             </tbody>
           </table>
+          
+        </div>
+        <!-- akhir -->
+
+
+
+            <!-- table -->
+        <div class="container bg-light mt-4">
+          <h4 class="text-center">
+            Jadwal <br />
+            Fortasi SMK Muhammadiyah 3 Pekanbaru <br />
+            jumat,15 Juli 2022
+          </h4>
+          <table class="table table-warning" id="table_jumat">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Hari, Jam</th>
+                <th scope="col">Materi</th>
+                <th scope="col">Pemateri</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="btn btn-danger"></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="btn btn-danger"></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          
         </div>
         <!-- akhir -->
       </div>
@@ -225,16 +273,56 @@
           "11:30 – 13:00",
           "ISHOMA",
           "Seluruh Peserta Panitia",
-          "Belum Selesai",
+          "selesai",
         ],
-        ["6", "13:00 – 14:00", "Ke IPM an 2", "Fasilitator", "Belum Selesai"],
+        ["6", "13:00 – 14:00", "Ke IPM an 2", "Fasilitator", "Selesai"],
         [
           "7",
           "14:00 – 15:00",
           "Lagu – Lagu IPM",
           "Fasilitator",
+          "selesai",
+        ],
+      ];
+
+         var Jumat = [
+        [
+          "1",
+          "07:00 – 07:30",
+          "Apel Pagi",
+          "Seluruh Peserta",
           "Belum Selesai",
         ],
+        [
+          "2",
+          "07:30 – 08:00",
+         "Isho Dhuha",
+          "Seluruh Peserta Panitia",
+          "Belum Selesai",
+        ],
+        [
+          "3",
+          "08:00 – 09:00",
+         "Ke Organisasian dan Kepemimmpinan",
+          "Fasilitator",
+          "Belum Selesai",
+        ],
+        [
+          "4",
+          "09:00 – 09:30",
+          "Mengenal IPM Ranting",
+          "PR IPM SMK MUTI / walas",
+          "Belum Selesai",
+        ],
+        [
+          "5",
+          "09:30 – 10:30",
+          "Edukasi Bullying",
+          "GenRe Indonesia Riau",
+          "Belum Selesai",
+        ],
+        ["6", "10:30 – 12:00", "Penutupan FORTASI", "Seluruh Peserta Panitia", "Belum Selesai"],
+       
       ];
 
       $(document).ready(function () {
@@ -242,6 +330,13 @@
           data: kamis,
         });
       });
+
+      $(document).ready(function () {
+        $("#table_jumat").DataTable({
+          data: Jumat,
+        });
+      });
+     
     </script>
   </body>
 </html>
