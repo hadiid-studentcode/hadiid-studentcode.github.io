@@ -16,7 +16,6 @@ function acak() {
     "Sherly Kurniawan",
     "Raditya",
     "Nabila Putri Marlilam",
-    "Arfan Dailani",
     "Frengky Okto Rasya",
     "Afni",
     "Nabil",
