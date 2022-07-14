@@ -21,8 +21,8 @@ function acak() {
     "Nabil",
     "Nisya Fresetia",
     "hayati",
-    "kak yulia",
-    "kak syukra",
+    "elni",
+   
   ];
 
  var nilai1 = data[Math.floor(Math.random() * data.length)];
