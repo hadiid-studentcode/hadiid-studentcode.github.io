@@ -17,11 +17,12 @@ function acak() {
     "Raditya",
     "Nabila Putri Marlilam",
     "Frengky Okto Rasya",
-    "Afni",
+    "Helsi",
     "Nabil",
     "Nisya Fresetia",
     "hayati",
     "elni",
+    "fajri",
   ];
 
  var nilai1 = data[Math.floor(Math.random() * data.length)];
