@@ -5,6 +5,7 @@ function nilaibobot() {
     if (nominal >= 90) {
       nilai.innerHTML =
         "<h4 class='alert-heading'>Konversi berhasil !</h4><p>4.00 / A </p><hr />";
+        
     } else if (nominal >= 80) {
        nilai.innerHTML =
          "<h4 class='alert-heading'>Konversi berhasil !</h4><p>3.75 / A- </p><hr />";
@@ -33,6 +34,8 @@ function nilaibobot() {
         nilai.innerHTML =
           "<h4 class='alert-heading'>Konversi berhasil !</h4><p>Terjadi Kesalahan !</p><hr />";
     }
+
+     document.getElementById("nominal").value = " ";
 }
 
 
