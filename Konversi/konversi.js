@@ -1,4 +1,4 @@
-function totalkan() {
+function konversi() {
   const nama = document.getElementById("nama").value;
   const utusan = document.getElementById("utusan").value;
   const tauhid = document.getElementById("tauhid").value;
@@ -12,8 +12,8 @@ function totalkan() {
   const tp = document.getElementById("tp").value;
   const ob = document.getElementById("ob").value;
   const rktl = document.getElementById("rktl").value;
-  const total1 = document.getElementById('total');
-    const ipk1 = document.getElementById("ipk");
+  const nilai = document.getElementById('nilai');
+  
 
   const n_tauhid = 2 * tauhid;
   const n_tarjih = 2 * tarjih;
@@ -29,24 +29,27 @@ function totalkan() {
 
   total = n_tauhid + n_tarjih + n_phiwm + n_profil + n_ipm1 + n_psikologis + n_spi + n_mk + n_tp + n_ob + n_rktl;
 
+alert(total);
+
+
+
  
+  nilai.innerHTML =
+    "<h4 class='alert-heading'>Konversi berhasil !</h4><p>4.00 / A </p><hr />";
 
-  total1.innerHTML = total;
 
 
- const ipk = konversi(total);
-
- ipk1.innerHTML = ipk;
 
 
 }
 
 
 
-function konversi(total) {
+function IPK(total) {
     
     ipk =  total / 23
 
 
     return ipk;
 }
+

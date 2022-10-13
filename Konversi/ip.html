@@ -11,13 +11,15 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="container">
+ <body class="container">
     <!-- card -->
     <div class="card text-center">
       <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="true" href="index.html">Nilai Bobot</a>
+            <a class="nav-link active" aria-current="true" href="index.html"
+              >Nilai Bobot</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link" href="ip.html">IP</a>
@@ -27,20 +29,202 @@
           </li>
         </ul>
       </div>
+       <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Nama</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="nama"
+            placeholder="Hadiid Andri Yulison"
+          
+          />
+        </div>
+       <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Utusan</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="utusan"
+            placeholder="PD IPM Pekanbaru"
+          
+          />
+        </div>
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">
-          With supporting text below as a natural lead-in to additional content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Tauhid Sebagai Pondasi Kehidupan (2 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="tauhid"
+            placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Tuntunan Ibadah Sesuai Tarjih Ibadah Mahdah dan Nafilah (2 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="tarjih"
+            placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >PHIWM (2 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="phiwm"
+            placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Profil Kader dan Nilai Perjuangan Tokoh Muhammadiyah (2 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="profil"
+             placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Ke – IPMan 1 (2 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="ipm1"
+            placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Psikologis & Etika Organisasi (2 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="psikologis"
+             placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Sejarah Peradaban Islam (2 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="spi"
+             placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Manajemen dan Keorganisasian (2 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="mk"
+             placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >(Muatan Lokal)Teknik Persidangan (2 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="tp"
+             placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Outbound (2 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="ob"
+             placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+         <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >RKTL (3 sks)</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="rktl"
+             placeholder="0-4"
+            min="0"
+            max="4"
+          
+          />
+        </div>
+        <a class="btn btn-primary" onclick="konversi()">Konversi</a>
       </div>
     </div>
     <!-- akhir card -->
+
+    <div id="hasil" class="alert alert-success" role="alert">
+
+    
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+
+    <script src="konversi.js"></script>
   </body>
+  
 </html>
