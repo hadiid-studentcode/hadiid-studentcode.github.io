@@ -65,47 +65,47 @@ function konversi() {
     f_tauhid +
     "</td><td>" +
     n_tauhid +
-    ".00</td></tr><tr class='table-primary'><td scope='row'>Tuntunan Ibadah Sesuai Tarjih Ibadah Mahdah dan Nafilah</td><td>2</td><td>" +
+    "</td></tr><tr class='table-primary'><td scope='row'>Tuntunan Ibadah Sesuai Tarjih Ibadah Mahdah dan Nafilah</td><td>2</td><td>" +
     f_tarjih +
     "</td><td>" +
     n_tarjih +
-    ".00</td></tr><tr class='table-primary'><td scope='row'>PHIWM</td><td>2</td><td>" +
+    "</td></tr><tr class='table-primary'><td scope='row'>PHIWM</td><td>2</td><td>" +
     f_phiwm +
     "</td><td>" +
     n_phiwm +
-    ".00</td></tr><tr class='table-primary'><td scope='row'>Profil Kader dan Nilai Perjuangan Tokoh Muhammadiyah</td><td>2</td><td>" +
+    "</td></tr><tr class='table-primary'><td scope='row'>Profil Kader dan Nilai Perjuangan Tokoh Muhammadiyah</td><td>2</td><td>" +
     f_profil +
     "</td><td>" +
     n_profil +
-    ".00</td></tr><tr class='table-primary'><td scope='row'>Ke – IPMan 1</td><td>2</td><td>" +
+    "</td></tr><tr class='table-primary'><td scope='row'>Ke – IPMan 1</td><td>2</td><td>" +
     f_ipm1 +
     "</td><td>" +
     n_ipm1 +
-    ".00</td></tr><tr class='table-primary'><td scope='row'>Psikologis & Etika Organisasi</td><td>2</td><td>" +
+    "</td></tr><tr class='table-primary'><td scope='row'>Psikologis & Etika Organisasi</td><td>2</td><td>" +
     f_psikologis +
     "</td><td>" +
     n_psikologis +
-    ".00</td></tr><tr class='table-primary'><td scope='row'>Sejarah Peradaban Islam</td><td>2</td><td>" +
+    "</td></tr><tr class='table-primary'><td scope='row'>Sejarah Peradaban Islam</td><td>2</td><td>" +
     f_spi +
     "</td><td>" +
     n_spi +
-    ".00</td></tr><tr class='table-primary'><td scope='row'>Manajemen dan Keorganisasian</td><td>2</td><td>" +
+    "</td></tr><tr class='table-primary'><td scope='row'>Manajemen dan Keorganisasian</td><td>2</td><td>" +
     f_mk +
     "</td><td>" +
     n_mk +
-    ".00</td></tr><tr class='table-primary'><td scope='row'>(Muatan Lokal )Teknik Persidangan</td><td>2</td><td>" +
+    "</td></tr><tr class='table-primary'><td scope='row'>(Muatan Lokal )Teknik Persidangan</td><td>2</td><td>" +
     f_tp +
     "</td><td>" +
     n_tp +
-    ".00</td></tr><tr class='table-primary'><td scope='row'>Outbound</td><td>2</td><td>" +
+    "</td></tr><tr class='table-primary'><td scope='row'>Outbound</td><td>2</td><td>" +
     f_ob +
     "</td><td>" +
     n_ob +
-    ".00</td></tr><tr class='table-primary'><td scope='row'>RKTL</td><td>3</td><td>" +
+    "</td></tr><tr class='table-primary'><td scope='row'>RKTL</td><td>3</td><td>" +
     f_rktl +
     "</td><td>" +
     n_rktl +
-    ".00</td></tr></tbody><tfoot></tfoot></table></div><hr>";
+    "</td></tr></tbody><tfoot></tfoot></table></div><hr>";
 }
 
 function IPK(total) {
