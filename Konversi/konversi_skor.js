@@ -11,7 +11,7 @@ function nilaibobot() {
          "<h4 class='alert-heading'>Konversi berhasil !</h4><p>3.75 / A- </p><hr />";
     } else if (nominal >= 75) {
       nilai.innerHTML =
-        "<h4 class='alert-heading'>Konversi berhasil !</h4><p>3.5 / B+ </p><hr />";
+        "<h4 class='alert-heading'>Konversi berhasil !</h4><p>3.50 / B+ </p><hr />";
     } else if (nominal >= 70) {
         nilai.innerHTML =
           "<h4 class='alert-heading'>Konversi berhasil !</h4><p>3.00 / B </p><hr />";
