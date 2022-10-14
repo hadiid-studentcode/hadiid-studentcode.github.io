@@ -73,10 +73,22 @@ function konversi() {
 
   const ipk = IPK(total);
 
+  const status = keterangan(ipk);
+
+  
+
+  
+
+  
+
   hasil.innerHTML =
-    "<h4 class='alert-heading'>Konversi berhasil !</h4><div class='table-responsive'><table class='table table-striped table-hover table-borderless table-primary align-middle'><thead class='table-light'><caption>Total : 23 SKS</caption><caption>IPK : " +
+    "<h4 class='alert-heading'>Konversi berhasil !</h4><p>Nama : " +
+    nama +
+    "</p><p>NBA : -</p><p>Utusan : " +
+    utusan +
+    "</p><div class='table-responsive'><table class='table table-striped table-hover table-borderless table-primary align-middle'><thead class='table-light'><caption>Total : 23 SKS</caption><caption>IPK : " +
     ipk +
-    " </caption><caption>Prediket :</caption><caption>Keterangan : Lulus / tidak lulus</caption><tr><th>Materi</th><th>SKS</th><th>Nilai</th><th>Bobot</th><th>Mutu</th></tr></thead><tbody class='table-group-divider'><tr class='table-primary'><td scope='row'>Tauhid Sebagai Pondasi Kehidupan</td><td>2</td><td>" +
+    " </caption><caption>Prediket :</caption><caption>Keterangan : "+status+"</caption><tr><th>Materi</th><th>SKS</th><th>Nilai</th><th>Bobot</th><th>Mutu</th></tr></thead><tbody class='table-group-divider'><tr class='table-primary'><td scope='row'>Tauhid Sebagai Pondasi Kehidupan</td><td>2</td><td>" +
     f_tauhid +
     "</td><td>" +
     s_tauhid +
@@ -210,5 +222,15 @@ function nilaibobot(nominal) {
     return 0.0;
   } else {
     return "terjadi kesalahan !";
+  }
+}
+
+function keterangan(ipk) {
+  if (ipk >= 3) {
+    return "Lulus";
+  } else if (ipk >= 0) {
+    return "Tidak lulus";
+  } else {
+    return "Kesalahan!";
   }
 }
