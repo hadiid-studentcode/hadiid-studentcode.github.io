@@ -11,7 +11,9 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="container">
+  <body class="container bg-dark">
+  
+    
     <!-- card -->
     <div class="card text-center">
       <div class="card-header">
@@ -38,157 +40,94 @@
           placeholder="Hadiid Andri Yulison"
         />
       </div>
+
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Utusan</label>
-        <input
-          type="text"
-          class="form-control"
-          id="utusan"
-          placeholder="PD IPM Pekanbaru"
-        />
+        <label for="" class="form-label">Utusan</label>
+        <select class="form-select form-select-md" name="" id="utusan">
+          <option selected>Pilih Pimpinan</option>
+          <option value="PR IPM SMK Muhammadiyah 3 Pekanbaru">PR IPM SMK Muhammadiyah 3 Pekanbaru</option>
+          <option value="PR IPM MA Muhammadiyah Pekanbaru">PR IPM MA Muhammadiyah Pekanbaru</option>
+          <option value="PR IPM SMP Muhammadiyah 4 Pekanbaru">PR IPM SMP Muhammadiyah 4 Pekanbaru</option>
+          <option value="PR IPM MTS Muhammadiyah 2 Pekanbaru">PR IPM MTS Muhammadiyah 2 Pekanbaru</option>
+          <option value="PC IPM Tampan">PC IPM Tampan</option>
+        </select>
       </div>
       <div class="card-body">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >Tauhid Sebagai Pondasi Kehidupan (2 sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="tauhid"
-           
-           
-          />
+          <input type="number" class="form-control" id="tauhid" />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >Tuntunan Ibadah Sesuai Tarjih Ibadah Mahdah dan Nafilah (2
             sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="tarjih"
-           
-           
-          />
+          <input type="number" class="form-control" id="tarjih" />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >PHIWM (2 sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="phiwm"
-           
-           
-          />
+          <input type="number" class="form-control" id="phiwm" />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >Profil Kader dan Nilai Perjuangan Tokoh Muhammadiyah (2 sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="profil"
-           
-           
-          />
+          <input type="number" class="form-control" id="profil" />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >Ke – IPMan 1 (2 sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="ipm1"
-           
-           
-          />
+          <input type="number" class="form-control" id="ipm1" />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >Psikologis & Etika Organisasi (2 sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="psikologis"
-           
-           
-          />
+          <input type="number" class="form-control" id="psikologis" />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >Sejarah Peradaban Islam (2 sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="spi"
-           
-           
-          />
+          <input type="number" class="form-control" id="spi" />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >Manajemen dan Keorganisasian (2 sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="mk"
-           
-           
-          />
+          <input type="number" class="form-control" id="mk" />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >(Muatan Lokal)Teknik Persidangan (2 sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="tp"
-           
-           
-          />
+          <input type="number" class="form-control" id="tp" />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >Outbound (2 sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="ob"
-           
-           
-          />
+          <input type="number" class="form-control" id="ob" />
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
             >RKTL (3 sks)</label
           >
-          <input
-            type="number"
-            class="form-control"
-            id="rktl"
-           
-           
-          />
+          <input type="number" class="form-control" id="rktl" />
         </div>
         <a class="btn btn-primary" onclick="konversi()">Konversi</a>
       </div>
     </div>
     <!-- akhir card -->
 
-    <div id="hasil" class="alert alert-success" role="alert">
-     
-    </div>
+    <div id="hasil" class="alert alert-success" role="alert"></div>
+
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -197,5 +136,6 @@
     ></script>
 
     <script src="konversi.js"></script>
+    
   </body>
 </html>
