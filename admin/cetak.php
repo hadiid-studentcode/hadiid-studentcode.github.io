@@ -6,7 +6,27 @@
         header("location:../index.php");
     }
 
-    $data = mysqli_query($conn, "SELECT * FROM transaksi JOIN user ON transaksi.id_user = user.id_user");
+
+    // cetak laporan
+
+    if (isset($_POST["cetak"])) {
+        if (cetaklaporan($_POST) > 0) {
+            echo "
+            <script>
+            alert ('laporan dicetak !');
+            document.location.href = 'cetaklaporan.php';
+            </script>
+        ";
+        } else {
+            echo "
+            <script>
+            alert ('data gagal dicetak !');
+            document.location.href = 'cetak.php';
+            </script>
+        ";
+        }
+    }
+
 
 
 
@@ -142,7 +162,7 @@
                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                  </svg>
-                                 <span class="d-sm-inline d-none"><?php echo $_SESSION['username']; ?> |</span>
+                                 <span class="d-sm-inline d-none">INI PHP $_SESSION['username']; ?> |</span>
 
 
                              </a>
@@ -191,20 +211,20 @@
                                                  <div class="mb-3">
                                                      <label for="nmpembeli" class="form-label">Laporan Transaksi</label>
                                                      <div class="form-check">
-                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="brgmsk">
+                                                         <input class="form-check-input" type="checkbox" value="barang_masuk" id="flexCheckDefault" name="brgmsk">
                                                          <label class="form-check-label" for="flexCheckDefault">
                                                              Barang Masuk
                                                          </label>
 
                                                      </div>
                                                      <div class="form-check">
-                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="pjl">
+                                                         <input class="form-check-input" type="checkbox" value="penjualan" id="flexCheckChecked" name="pjl">
                                                          <label class="form-check-label" for="flexCheckChecked">
                                                              Penjualan
                                                          </label>
                                                      </div>
                                                      <div class="form-check">
-                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" name="laba">
+                                                         <input class="form-check-input" type="checkbox" value="laba" id="flexCheckChecked" name="laba">
                                                          <label class="form-check-label" for="flexCheckChecked">
                                                              Laba
                                                          </label>
@@ -215,8 +235,12 @@
                                                      <label for="ungdibyr" class="form-label">Tanggal</label>
 
                                                      <div class="input-group mb-3">
+                                                         <input type="date" class="form-control" placeholder="tanggalAwal" aria-label="tanggalAwal" name="tanggalAwal">
+                                                         <span class="input-group-text">-</span>
+                                                         INI PHPnow = date('Y-m-d');
 
-                                                         <input type="date" class="form-control" placeholder="Uang Dibayar" aria-label="ungdibyr" aria-describedby="ungdibyr" name="ungdibyr" id="ungdibyr" name="tgl">
+                                                         ?>
+                                                         <input type="date" class="form-control" placeholder="tanggalAkhir" aria-label="tanggalAkhir" name="tanggalAkhir" value="INI PHP $now; ?>">
                                                      </div>
                                                  </div>
 
@@ -227,11 +251,11 @@
 
 
 
-                                                     <?php $usr = $_SESSION['username']; ?>
-                                                     <?php $user = mysqli_query($conn, "SELECT id_user, username FROM user WHERE username = '$usr'"); ?>
-                                                     <?php $usr = mysqli_fetch_array($user); ?>
+                                                     INI PHPusr = $_SESSION['username']; ?>
+                                                     INI PHPuser = mysqli_query($conn, "SELECT id_user, username FROM user WHERE username = '$usr'"); ?>
+                                                     INI PHPusr = mysqli_fetch_array($user); ?>
 
-                                                     <input type="text" name="nmusr" id="nmusr" value="<?= $usr["id_user"]; ?>">
+                                                     <input type="text" name="nmusr" id="nmusr" value="INI PHP $usr[" id_user"]; ?>">
 
 
                                                      </select>
@@ -241,7 +265,7 @@
                                                  <button type="submit" class="btn btn-info" name="cetak"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer" viewBox="0 0 16 16">
                                                          <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
                                                          <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z" />
-                                                     </svg>  Cetak</button>
+                                                     </svg> Cetak</button>
 
 
 

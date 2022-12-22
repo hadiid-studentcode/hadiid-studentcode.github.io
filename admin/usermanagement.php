@@ -162,7 +162,7 @@
                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                  </svg>
-                                 <span class="d-sm-inline d-none"><?php echo $_SESSION['username']; ?> |</span>
+                                 <span class="d-sm-inline d-none">INI PHP $_SESSION['username']; ?> |</span>
 
 
                              </a>
@@ -211,7 +211,7 @@
                                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Aksi</th>
                                  </tr>
                              </thead>
-                             <?php $i = 1; ?>
+                             INI PHPi = 1; ?>
                              <?php while ($pemilik = mysqli_fetch_array($data2)) : ?>
                                  <tbody>
                                      <tr scope="row">
@@ -219,24 +219,24 @@
                                              <div class="d-flex px-2 py-1">
 
                                                  <div class="d-flex flex-column justify-content-center">
-                                                     <h6 class="mb-0 text-sm"><?= $i; ?></h6>
+                                                     <h6 class="mb-0 text-sm">INI PHP $i; ?></h6>
 
                                                  </div>
                                              </div>
                                          </td>
                                          <td>
-                                             <p class="text-xs font-weight-bold mb-0"><?= $pemilik["nama_pemilik"]; ?></p>
+                                             <p class="text-xs font-weight-bold mb-0">INI PHP $pemilik["nama_pemilik"]; ?></p>
 
                                          </td>
                                          <td class="align-middle text-center text-sm">
-                                             <span class="badge badge-sm bg-gradient-success"><?= $pemilik["username"]; ?></span>
+                                             <span class="badge badge-sm bg-gradient-success">INI PHP $pemilik["username"]; ?></span>
                                          </td>
                                          <td class="align-middle text-center">
-                                             <span class="text-secondary text-xs font-weight-bold"><?= $pemilik["no_telp_pemilik"]; ?></span>
+                                             <span class="text-secondary text-xs font-weight-bold">INI PHP $pemilik["no_telp_pemilik"]; ?></span>
 
                                          </td>
                                          <td class="align-middle text-center">
-                                             <span class="text-secondary text-xs font-weight-bold"><?= $pemilik["level"]; ?></span>
+                                             <span class="text-secondary text-xs font-weight-bold">INI PHP $pemilik["level"]; ?></span>
                                          </td>
 
                                          <td class="align-middle">
@@ -275,7 +275,7 @@
                                          </td>
                                      </tr>
 
-                                     <?php $i++; ?>
+                                     INI PHPi++; ?>
                                  <?php endwhile; ?>
                                  </tbody>
 
@@ -288,24 +288,24 @@
                                                  <div class="d-flex px-2 py-1">
 
                                                      <div class="d-flex flex-column justify-content-center">
-                                                         <h6 class="mb-0 text-sm"><?= $i; ?></h6>
+                                                         <h6 class="mb-0 text-sm">INI PHP $i; ?></h6>
 
                                                      </div>
                                                  </div>
                                              </td>
                                              <td>
-                                                 <p class="text-xs font-weight-bold mb-0"><?= $pegawai["nama_pegawai"]; ?></p>
+                                                 <p class="text-xs font-weight-bold mb-0">INI PHP $pegawai["nama_pegawai"]; ?></p>
 
                                              </td>
                                              <td class="align-middle text-center text-sm">
-                                                 <span class="badge badge-sm bg-gradient-success"><?= $pegawai["username"]; ?></span>
+                                                 <span class="badge badge-sm bg-gradient-success">INI PHP $pegawai["username"]; ?></span>
                                              </td>
                                              <td class="align-middle text-center">
-                                                 <span class="text-secondary text-xs font-weight-bold"><?= $pegawai["no_telp_pegawai"]; ?></span>
+                                                 <span class="text-secondary text-xs font-weight-bold">INI PHP $pegawai["no_telp_pegawai"]; ?></span>
 
                                              </td>
                                              <td class="align-middle text-center">
-                                                 <span class="text-secondary text-xs font-weight-bold"><?= $pegawai["level"]; ?></span>
+                                                 <span class="text-secondary text-xs font-weight-bold">INI PHP $pegawai["level"]; ?></span>
                                              </td>
 
                                              <td class="align-middle">
@@ -340,7 +340,7 @@
                                              </td>
                                          </tr>
 
-                                         <?php $i++; ?>
+                                         INI PHPi++; ?>
                                      <?php endwhile; ?>
                                      </tbody>
                          </table>

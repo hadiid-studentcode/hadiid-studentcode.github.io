@@ -267,7 +267,7 @@
                          <ul class="pagination">
                              <li class="page-item">
                                  <?php if ($halamanAktif > 1) : ?>
-                                     <a class="page-link" href="?page=<?= $halamanAktif - 1; ?>" aria-label="Previous">
+                                     <a class="page-link" href="?page=INI PHP $halamanAktif - 1; ?>" aria-label="Previous">
 
                                          <span aria-hidden="true">&laquo;</span>
                                      </a>
@@ -275,14 +275,14 @@
                              </li>
                              <?php for ($i = 1; $i <= $jumlahhalaman; $i++) : ?>
                                  <?php if ($i == $halamanAktif) : ?>
-                                     <li class="page-item"><a class="page-link" href="?page=<?= $i; ?>" style="font-weight: bold; color: red;"><?= $i; ?></a></li>
+                                     <li class="page-item"><a class="page-link" href="?page=INI PHP $i; ?>" style="font-weight: bold; color: red;">INI PHP $i; ?></a></li>
                                  <?php else : ?>
-                                     <li class="page-item"><a class="page-link" href="?page=<?= $i; ?>"><?= $i; ?></a></li>
+                                     <li class="page-item"><a class="page-link" href="?page=INI PHP $i; ?>">INI PHP $i; ?></a></li>
                                  <?php endif; ?>
                              <?php endfor; ?>
                              <li class="page-item">
                                  <?php if ($halamanAktif < $jumlahhalaman) : ?>
-                                     <a class="page-link" href="?page=<?= $halamanAktif + 1; ?>" aria-label="Next">
+                                     <a class="page-link" href="?page=INI PHP $halamanAktif + 1; ?>" aria-label="Next">
                                          <span aria-hidden="true">&raquo;</span>
                                      </a>
                                  <?php endif; ?>
@@ -336,7 +336,7 @@
                                                  <option selected>Choose..</option>
                                                  <?php $suplier = mysqli_query($conn, "SELECT id_suplier, nama_suplier, keterangan FROM suplier"); ?>
                                                  <?php while ($spl = mysqli_fetch_array($suplier)) : ?>
-                                                     <option value=<?= $spl["id_suplier"]; ?>><?= $spl["nama_suplier"]; ?> ( <?= $spl["keterangan"]; ?> ) </option>
+                                                     <option value=INI PHP $spl["id_suplier"]; ?>>INI PHP $spl["nama_suplier"]; ?> ( INI PHP $spl["keterangan"]; ?> ) </option>
                                                  <?php endwhile; ?>
                                              </select>
 
@@ -351,7 +351,7 @@
                                              <?php $user = mysqli_query($conn, "SELECT id_user, username FROM user WHERE username = '$usr'"); ?>
                                              <?php $usr = mysqli_fetch_array($user); ?>
 
-                                             <input type="text" name="nmusr" id="nmusr" value="<?= $usr["id_user"]; ?>">
+                                             <input type="text" name="nmusr" id="nmusr" value="INI PHP $usr[" id_user"]; ?>">
 
 
                                              </select>
@@ -405,45 +405,45 @@
                                              <div class="d-flex px-2 py-1">
 
                                                  <div class="d-flex flex-column justify-content-center">
-                                                     <h6 class="mb-0 text-sm"><?= $i; ?></h6>
+                                                     <h6 class="mb-0 text-sm">INI PHP $i; ?></h6>
 
                                                  </div>
                                              </div>
                                          </td>
                                          <td>
-                                             <p class="text-xs font-weight-bold mb-0">IN-<?= $barangMasuk["tanggal_masuk"] ?><?= $barangMasuk["kode_barang_masuk"]; ?></p>
+                                             <p class="text-xs font-weight-bold mb-0">IN-INI PHP $barangMasuk["tanggal_masuk"] ?>INI PHP $barangMasuk["kode_barang_masuk"]; ?></p>
 
                                          </td>
                                          <td class="align-middle text-center text-sm">
-                                             <span class="badge badge-sm bg-gradient-success"><?= $barangMasuk["tanggal_masuk"]; ?></span>
+                                             <span class="badge badge-sm bg-gradient-success">INI PHP $barangMasuk["tanggal_masuk"]; ?></span>
                                          </td>
                                          <td class="align-middle text-center">
-                                             <span class="text-secondary text-xs font-weight-bold"><?= $barangMasuk["nama_barang"]; ?></span>
+                                             <span class="text-secondary text-xs font-weight-bold">INI PHP $barangMasuk["nama_barang"]; ?></span>
                                          </td>
 
 
                                          <td class="align-middle text-center">
-                                             <span class="text-secondary text-xs font-weight-bold">RP.<?= $barangMasuk["harga_beli"]; ?></span>
+                                             <span class="text-secondary text-xs font-weight-bold">RP.INI PHP $barangMasuk["harga_beli"]; ?></span>
                                          </td>
                                          <td class="align-middle text-center">
-                                             <span class="text-secondary text-xs font-weight-bold"><?= $barangMasuk["satuan_barang"]; ?></span>
+                                             <span class="text-secondary text-xs font-weight-bold">INI PHP $barangMasuk["satuan_barang"]; ?></span>
                                          </td>
                                          <td class="align-middle text-center">
-                                             <span class="text-secondary text-xs font-weight-bold"><?= $barangMasuk["jumlah_masuk"]; ?> <?= $barangMasuk["satuan_barang"]; ?></span>
+                                             <span class="text-secondary text-xs font-weight-bold">INI PHP $barangMasuk["jumlah_masuk"]; ?> INI PHP $barangMasuk["satuan_barang"]; ?></span>
                                          </td>
                                          <td class="align-middle text-center">
-                                             <span class="text-secondary text-xs font-weight-bold"><?= $barangMasuk["nama_suplier"]; ?></span>
+                                             <span class="text-secondary text-xs font-weight-bold">INI PHP $barangMasuk["nama_suplier"]; ?></span>
                                          </td>
                                          <td class="align-middle text-center">
-                                             <span class="text-secondary text-xs font-weight-bold"><?= $barangMasuk["username"]; ?></span>
+                                             <span class="text-secondary text-xs font-weight-bold">INI PHP $barangMasuk["username"]; ?></span>
                                          </td>
                                          <td class="align-middle text-center">
-                                             <span class="text-secondary text-xs font-weight-bold"><?= $barangMasuk["status_barang_masuk"]; ?></span>
+                                             <span class="text-secondary text-xs font-weight-bold">INI PHP $barangMasuk["status_barang_masuk"]; ?></span>
                                          </td>
 
                                          <td class="align-middle">
 
-                                             <a href="../tbhstok.php?tmbbrg=<?= $barangMasuk["kode_barang_masuk"]; ?>" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="tambah stok">
+                                             <a href="../tbhstok.php?tmbbrg=INI PHP $barangMasuk[" kode_barang_masuk"]; ?>" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="tambah stok">
 
                                                  <button type="button" class="btn " name="tambahstok" id="svg">
                                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#157347" class="bi bi-check-square-fill" viewBox="0 0 16 16">
@@ -451,19 +451,20 @@
                                                      </svg>
 
                                                  </button>
+                                             </a>
 
 
 
 
-                                                 <a href="../del/delmsk.php?kdbrgmsk=<?= $barangMasuk["kode_barang_masuk"]; ?>" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="del barang masuk">
-                                                     <button type="button" class="btn">
-                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
-                                                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                                                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                                                         </svg>
+                                             <a href="../del/delmsk.php?kdbrgmsk=INI PHP $barangMasuk[" kode_barang_masuk"]; ?>" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="del barang masuk">
+                                                 <button type="button" class="btn">
+                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
+                                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                     </svg>
 
-                                                     </button>
-                                                 </a>
+                                                 </button>
+                                             </a>
                                          </td>
                                      </tr>
 

@@ -417,9 +417,19 @@ function pilihbarang($data)
     $hargajual = ($data['hidden_price']);
     $total_harga = $hargajual *  $jumlahBarang;
 
+    // memasukkan id transaksi
+    $query1 = "INSERT INTO transaksi (id_transaksi) VALUE('') ";
+    mysqli_query($conn, $query1);
+    // mengeluarkan hasil id transaksi
+    $data = mysqli_query($conn,"SELECT id_transaksi from transaksi");
+   while ( $hasil = mysqli_fetch_array($data)) {
+     $array1= array( $hasil['id_transaksi']);
+     
+   }
+   $id_transaksi = $array1[0];
+   
 
-
-    $query = "INSERT INTO penjualan (kode_barang, jumlah_beli, total_harga) VALUE ('$kodebarang','$jumlahBarang','$total_harga') ";
+    $query = "INSERT INTO penjualan (id_transaksi,kode_barang, jumlah_beli, total_harga) VALUE ('$id_transaksi','$kodebarang','$jumlahBarang','$total_harga') ";
 
     mysqli_query($conn, $query);
 
@@ -474,7 +484,7 @@ function formbeli($data)
 
 
 
-    $query = "INSERT INTO transaksi VALUE (
+    $query = "INSERT INTO transaksi () VALUE (
                 '',
                 '$kodetransaksi',
                 '$tgl',
@@ -496,5 +506,35 @@ function formbeli($data)
 
 
 
+    return mysqli_affected_rows($conn);
+}
+// cetak laporan
+function cetaklaporan($data){
+
+    global $conn;
+    $barangMasuk = ($data['brgmsk']);
+    $penjualan = ($data['pjl']);
+    // $laba = ($data['laba']);
+    $tanggalAwal = ($data['tanggalAwal']);
+    $tanggalAkhir = ($data['tanggalAkhir']);
+    $user = ($data['nmusr']);
+
+
+   if ($barangMasuk != null) {
+      echo "<script>window.open('cetaklaporanbarangmasuk.php?barangmasuk=$barangMasuk&tanggalAwal=$tanggalAwal&tanggalAkhir=$tanggalAkhir','' ,'with=200, height=100');</script>";
+
+      
+   } if ($penjualan != null) {
+        echo "<script>window.open('cetaklaporantransaksipenjualan.php?penjualan=$penjualan&tanggalAwal=$tanggalAwal&tanggalAkhir=$tanggalAkhir','' ,'with=200, height=100');</script>";
+   }
+   
+   
+
+    
+
+
+   
+
+    
     return mysqli_affected_rows($conn);
 }

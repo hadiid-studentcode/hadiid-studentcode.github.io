@@ -267,7 +267,7 @@
                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                                  </svg>
-                                 <span class="d-sm-inline d-none"><?php echo $_SESSION['username']; ?> |</span>
+                                 <span class="d-sm-inline d-none">INI PHP $_SESSION['username']; ?> |</span>
 
 
                              </a>
@@ -330,7 +330,7 @@
                                                              <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Aksi</th>
                                                          </tr>
                                                      </thead>
-                                                     <?php $i = 1; ?>
+                                                     INI PHPi = 1; ?>
                                                      <?php while ($barang = mysqli_fetch_assoc($data)) : ?>
                                                          <tbody>
                                                              <form method="POST">
@@ -339,26 +339,26 @@
                                                                          <div class="d-flex px-2 py-1">
 
                                                                              <div class="d-flex flex-column justify-content-center">
-                                                                                 <h6 class="mb-0 text-sm"><?= $i; ?></h6>
+                                                                                 <h6 class="mb-0 text-sm">INI PHP $i; ?></h6>
 
                                                                              </div>
                                                                          </div>
                                                                      </td>
 
                                                                      <td class="align-middle text-center text-sm">
-                                                                         <span class="badge badge-sm bg-gradient-success"><?= $barang["nama_barang"]; ?></span>
+                                                                         <span class="badge badge-sm bg-gradient-success">INI PHP $barang["nama_barang"]; ?></span>
                                                                      </td>
 
 
 
                                                                      <td class="align-middle text-center">
-                                                                         <span class="text-secondary text-xs font-weight-bold">RP.<?= $barang["harga_jual"]; ?></span>
+                                                                         <span class="text-secondary text-xs font-weight-bold">RP.INI PHP $barang["harga_jual"]; ?></span>
                                                                      </td>
                                                                      <td class="align-middle text-center">
                                                                          <input type="number" name="quantity" value="1" class="form-control" />
-                                                                         <input type="hidden" name="hidden_name" value="<?php echo $barang["nama_barang"]; ?>" />
-                                                                         <input type="hidden" name="hidden_price" value="<?php echo $barang["harga_jual"]; ?>" />
-                                                                         <input type="hidden" name="hidden_id" value="<?php echo $barang["kode_barang"]; ?>" />
+                                                                         <input type="hidden" name="hidden_name" value="INI PHP $barang[" nama_barang"]; ?>" />
+                                                                         <input type="hidden" name="hidden_price" value="INI PHP $barang[" harga_jual"]; ?>" />
+                                                                         <input type="hidden" name="hidden_id" value="INI PHP $barang[" kode_barang"]; ?>" />
                                                                      </td>
 
                                                                      <td class="align-middle">
@@ -379,7 +379,7 @@
                                                              </form>
 
                                                          </tbody>
-                                                         <?php $i++; ?>
+                                                         INI PHPi++; ?>
                                                      <?php endwhile; ?>
                                                  </table>
                                              </div>
@@ -428,7 +428,7 @@
                                                  <div class="d-flex px-2 py-1">
 
                                                      <div class="d-flex flex-column justify-content-center">
-                                                         <h6 class="mb-0 text-sm"><?= $i;?></h6>
+                                                         <h6 class="mb-0 text-sm">INI PHP $i; ?></h6>
 
                                                      </div>
                                                  </div>
@@ -436,20 +436,20 @@
                                              <td>
 
 
-                                                 <p class="text-xs font-weight-bold mb-0"><?php echo $values["item_name"]; ?></p>
+                                                 <p class="text-xs font-weight-bold mb-0">INI PHP $values["item_name"]; ?></p>
 
 
 
 
                                              </td>
                                              <td class="align-middle text-center text-sm">
-                                                 <span class="text-secondary text-xs font-weight-bold">RP. <?php echo $values["item_price"]; ?></span>
+                                                 <span class="text-secondary text-xs font-weight-bold">RP. INI PHP $values["item_price"]; ?></span>
                                              </td>
                                              <td class="align-middle text-center">
-                                                 <span class="text-secondary text-xs font-weight-bold"><?php echo $values["item_quantity"]; ?></span>
+                                                 <span class="text-secondary text-xs font-weight-bold">INI PHP $values["item_quantity"]; ?></span>
                                              </td>
                                              <td class="align-middle text-center">
-                                                 <span class="text-secondary text-xs font-weight-bold"><?php echo number_format($values["item_quantity"] * $values["item_price"], 2); ?></span>
+                                                 <span class="text-secondary text-xs font-weight-bold">INI PHP number_format($values["item_quantity"] * $values["item_price"], 2); ?></span>
                                              </td>
 
 
@@ -457,7 +457,7 @@
                                              <td class="align-middle">
 
 
-                                                 <a href="transaksipenjualan.php?action=delete&id=<?php echo $values["item_id"]; ?>" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Hapus">
+                                                 <a href="transaksipenjualan.php?action=delete&id=INI PHP $values[" item_id"]; ?>" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Hapus">
                                                      <button type="button" class="btn">
                                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle" viewBox="0 0 16 16">
                                                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -480,7 +480,7 @@
                                          <td colspan="4" class="align-middle text-center">
                                              <span class="text-secondary text-xs font-weight-bold">SUB TOTAL</span>
                                          </td>
-                                         <td colspan="" class="align-middle text-start"> <span class="text-secondary text-xs font-weight-bold">RP. <?php echo number_format($total, 2); ?></span></td>
+                                         <td colspan="" class="align-middle text-start"> <span class="text-secondary text-xs font-weight-bold">RP. INI PHP number_format($total, 2); ?></span></td>
                                      </tr>
                                  <?php
                                 } else {
@@ -552,11 +552,11 @@
 
 
 
-                                     <?php $usr = $_SESSION['username']; ?>
-                                     <?php $user = mysqli_query($conn, "SELECT id_user, username FROM user WHERE username = '$usr'"); ?>
-                                     <?php $usr = mysqli_fetch_array($user); ?>
+                                     INI PHPusr = $_SESSION['username']; ?>
+                                     INI PHPuser = mysqli_query($conn, "SELECT id_user, username FROM user WHERE username = '$usr'"); ?>
+                                     INI PHPusr = mysqli_fetch_array($user); ?>
 
-                                     <input type="text" name="nmusr" id="nmusr" value="<?= $usr["id_user"]; ?>">
+                                     <input type="text" name="nmusr" id="nmusr" value="INI PHP $usr[" id_user"]; ?>">
 
 
                                      </select>
